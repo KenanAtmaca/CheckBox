@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		6E9DBF641F138A0E00CF7A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9DBF631F138A0E00CF7A4B /* AppDelegate.swift */; };
-		6E9DBF661F138A0E00CF7A4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9DBF651F138A0E00CF7A4B /* ViewController.swift */; };
 		6E9DBF691F138A0E00CF7A4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E9DBF671F138A0E00CF7A4B /* Main.storyboard */; };
 		6E9DBF6B1F138A0E00CF7A4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E9DBF6A1F138A0E00CF7A4B /* Assets.xcassets */; };
 		6E9DBF6E1F138A0E00CF7A4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E9DBF6C1F138A0E00CF7A4B /* LaunchScreen.storyboard */; };
+		6E9DBF761F138A2A00CF7A4B /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9DBF751F138A2A00CF7A4B /* CheckBox.swift */; };
+		6E9DBF781F138A4000CF7A4B /* testVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9DBF771F138A4000CF7A4B /* testVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6E9DBF601F138A0E00CF7A4B /* CheckBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9DBF631F138A0E00CF7A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E9DBF651F138A0E00CF7A4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E9DBF681F138A0E00CF7A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E9DBF6A1F138A0E00CF7A4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E9DBF6D1F138A0E00CF7A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E9DBF6F1F138A0E00CF7A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E9DBF751F138A2A00CF7A4B /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		6E9DBF771F138A4000CF7A4B /* testVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = testVC.swift; path = ../testVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			children = (
 				6E9DBF621F138A0E00CF7A4B /* CheckBox */,
 				6E9DBF611F138A0E00CF7A4B /* Products */,
+				6EC871EE1F1642AA003BEAC6 /* Source */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +58,21 @@
 			isa = PBXGroup;
 			children = (
 				6E9DBF631F138A0E00CF7A4B /* AppDelegate.swift */,
-				6E9DBF651F138A0E00CF7A4B /* ViewController.swift */,
 				6E9DBF671F138A0E00CF7A4B /* Main.storyboard */,
 				6E9DBF6A1F138A0E00CF7A4B /* Assets.xcassets */,
 				6E9DBF6C1F138A0E00CF7A4B /* LaunchScreen.storyboard */,
 				6E9DBF6F1F138A0E00CF7A4B /* Info.plist */,
+				6E9DBF771F138A4000CF7A4B /* testVC.swift */,
 			);
 			path = CheckBox;
+			sourceTree = "<group>";
+		};
+		6EC871EE1F1642AA003BEAC6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6E9DBF751F138A2A00CF7A4B /* CheckBox.swift */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E9DBF661F138A0E00CF7A4B /* ViewController.swift in Sources */,
+				6E9DBF761F138A2A00CF7A4B /* CheckBox.swift in Sources */,
 				6E9DBF641F138A0E00CF7A4B /* AppDelegate.swift in Sources */,
+				6E9DBF781F138A4000CF7A4B /* testVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +316,7 @@
 				6E9DBF741F138A0E00CF7A4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
