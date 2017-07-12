@@ -32,6 +32,7 @@ class CheckBox: NSObject {
     private var toView:UIView!
     private var contentPath:UIBezierPath!
     private var tapGesture:UITapGestureRecognizer!
+    
     private var boxStyle:style!
     
     var animation:effect = .normal
@@ -114,6 +115,7 @@ class CheckBox: NSObject {
         window.backgroundColor = UIColor.clear
         window.layer.borderWidth = 2
         window.layer.borderColor = UIColor.lightGray.cgColor
+        window.translatesAutoresizingMaskIntoConstraints = false
         
         switch (size) {
         case .small:
@@ -187,6 +189,12 @@ class CheckBox: NSObject {
         content.fillColor = state == false ? UIColor.clear.cgColor : contentColor?.cgColor ?? UIColor.lightGray.cgColor
         
         window.layer.addSublayer(content)
+    }
+    
+    func remove() {
+        content.removeAllAnimations()
+        content.removeFromSuperlayer()
+        window.removeFromSuperview()
     }
     
 }//
