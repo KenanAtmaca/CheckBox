@@ -33,6 +33,12 @@
     box.animation = .scale
 ```
 
+##### Remove
+
+```Swift
+    box.remove()
+```
+
 ##### Set border & colors
 
 ```Swift
